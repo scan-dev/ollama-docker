@@ -15,7 +15,7 @@ services:
       - ollama-webui
     networks:
       - ollama-docker
-      
+
   ollama:
     volumes:
       - ./ollama/ollama:/root/.ollama
