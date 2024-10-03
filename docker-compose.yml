@@ -57,4 +57,3 @@ services:
 networks:
   ollama-docker:
     external: false
-  
