@@ -4,7 +4,9 @@ WORKDIR /code
 
 COPY ./requirements.txt ./
 
-RUN apt-get update && apt-get install git -y && apt-get install curl -y
+RUN apt-get update
+RUN apt-get install git -y
+RUN apt-get install curl -y
 
 RUN pip install --no-cache-dir -r requirements.txt
 
